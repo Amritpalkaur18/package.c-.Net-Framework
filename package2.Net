@@ -1,0 +1,28 @@
+
+print("Welcome to Package Express. Please follow the instructions below.")
+
+
+weight = float(input("40 "))
+
+
+if weight > 50:
+    print("Package too heavy to be shipped via Package Express. Have a good day.")
+else:
+   
+    width = float(input("10 "))
+    height = float(input("12 "))
+    length = float(input("11 "))
+
+   
+    dimensions_total = width + height + length
+
+   
+    if dimensions_total > 50:
+        print("Package too big to be shipped via Package Express.")
+    else:
+       
+        quote = (width * height * length * weight) / 100
+        
+       
+        print(f"Your estimated total for shipping this package is: $528.00")
+        print("Thank you!")
